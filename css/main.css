@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root{
+    --dark: #232525;
+    --panel: #393b3b;
+    --text: #eceeee;
+    --primary: #E37B47;
+    --text-fade: #bfbfbf;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+.title{
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.title small{
+    color: var(--text);
+    font-size: 28px;
+    opacity: 1;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+small{
+    opacity: 0.7;
+}
+
+input{
+    border: 1.7px solid rgba(0,0,0,0.2);
+    border-radius: 0px;
+    padding: 10px;
+    font: inherit;
+    width: 100%;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s border-color, 0.1s background-color;
+}
+
+input:focus,
+input:hover{
+    background-color: rgba(255,255,255,0.05);
+}
+
+input:focus{
+    border-color: var(--primary);
+}
+
+button{
+    border: 1.7px solid rgba(0,0,0,0.2);
+    border-radius: 0px;
+    padding: 10px 20px;
+    font: inherit;
+    background-color: rgba(0,0,0,0.1);
+    border-color: var(--primary);
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--text);
+    transition: 0.13s transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button:hover{
+    transform: scale(1.08);
+}
+
+button:active{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.disabled{
+    transition: 0.3s opacity;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main{
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+    display: grid;
+    gap: 15px;
+}
+
+.panel{
+    background-color: var(--panel);
+    padding: 20px;
+    box-shadow: 5px 5px 16px rgba(0,0,0,0.2);
+}
+
+.panel{
+    display: grid;
+    gap: 18px;
+}
+
+.panel>div{
+    display: grid;
+    gap: 10px;
+}
+
+.panel .resp{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.resp span{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.resp .pfp{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.2);
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.resp .pfp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resp .info{
+    display: grid;
+    gap: 5px;
+}
+
+footer{
+    opacity: 0.5;
+    display: grid;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    gap: 15px;
+    max-width: 400px;
+}
+
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+footer nav a{
+    font-size: 12px;
+    text-decoration: none;
+    background-color: var(--panel);
+    padding: 2px 5px;
+    color: var(--text);
+    transition: 0.1s;
+}
+
+footer nav a:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/main.js" defer></script>
+    <title>Sticker count</title>
+</head>
+<body>
+    <div class="main">
+        <div class="panel">
+            <div>
+                <h1 class="title">stikks<small>.onacid.net</small></h1>
+                <div><b>Hey!</b> Curious about how many stickers a Gamejolt post currently has? Well let's find out! :V</div>
+            </div>
+        </div>
+
+        <div class="panel" id="formbox">
+            <div>
+                <h3>Please enter the URL of the GJ post</h3>
+                <div class="inline">
+                    <input id="url" placeholder="https://gamejolt.com/p/hello-world-coolhash" type="text">
+                    <button id="submit">Submit</button>
+                </div>
+                <small id="msg" style="display: none;"><b>Loading /</b> Aggregating information</small>
+            </div>
+        </div>
+
+        <div class="panel" style="display: none;" id="respbox">
+            <div class="resp">
+                <div class="pfp" id="pfp">
+                    <img>
+                </div>
+                <div class="info">
+                    <h3><span id="username">truddy4ever</span>'s post</h3>
+                    <div>This specific post has <span id="num">0</span> stickers, of which <span id="cnum">0</span> are charged. <small id="rip">(So sad...)</small><small id="rich">(Dayum, rich lad)</small></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <h2>stikks.onacid.net</h2>
+                <div>Website, code produced by <b>ddemkoo</b> - 2023</div>
+            </div>
+            <nav>
+                <a href="https://github.com/TruddyTheDuddi/stikks">Public Github Repo</a>
+                <a href="https://gamejolt.com">GameJolt</a>
+                <a>v0.1</a>
+            </nav>
+            <small>
+                This site is not affiliated with Gamejolt in any way. This is a project which utilises the public Gamejolt API. All content (images and data) belongs to their respective owners.
+            </small>
+        </footer>
+
+    </div>
+
+
+
+</body>
+</html>

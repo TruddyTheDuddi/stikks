@@ -1,0 +1,5 @@
+# No access to folders
+Options All -Indexes
+
+# Display errors
+php_flag display_errors on
