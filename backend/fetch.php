@@ -15,8 +15,11 @@ if(!preg_match("/^https:\/\/gamejolt\.com\/p\//", $_GET["url"])) {
     exit();
 }
 
+// Remove the part after the # from the hash in case someone copied the comment link
+$hash = explode("#", $_GET["url"])[0];
+
 // Explode the url at - and get the last part
-$parts = explode("-", $_GET["url"]);
+$parts = explode("-", $hash);
 if(count($parts) == 0) {
     $r->set_error("Bru, that URL is most likely not pointing towards a gamejolt post...");
     exit();

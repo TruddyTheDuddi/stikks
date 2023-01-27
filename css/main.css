@@ -174,3 +174,10 @@ footer nav a{
 footer nav a:hover{
     opacity: 0.8;
 }
+
+@media screen and (max-width: 550px) {
+    .main{
+        padding: 0;
+        margin: 5px;
+    }
+}
