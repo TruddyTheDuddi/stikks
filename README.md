@@ -3,7 +3,7 @@ Hello world (again!) Runs on PHP, easily deployable, no keys required. Probably 
 
 ## Update logs
 
-**v0.2**
+**v0.1.2**
 - Mobile version fix
 - Small fix in case someone copies the URL with a #comment tag
 
